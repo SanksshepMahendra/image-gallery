@@ -1,0 +1,139 @@
+.heading__wrapper {
+	text-align: center;
+	margin: 10px auto;
+    background-color: #fff;
+    border: solid 1px #ddd;
+    border-radius: 4px 4px 0 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.thumbnail__wrapper {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+a.thumbnail img {
+	width: 100%;
+}
+.pager__wrapper {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+ul.pagination.pagination-lg.pagination__custom {
+	color: black;
+}
+
+.pagination.pagination-lg.pagination__custom li.active:not(.disabled) a {
+	background-color: #000000;
+	color: white;
+}
+
+.pagination.pagination-lg.pagination__custom li.disabled a {
+	color: #777;
+}
+
+.pagination.pagination-lg.pagination__custom li>a {
+	color: black;
+	margin: 0 3px;
+}
+
+.pagination.pagination-lg.pagination__custom li:not(.disabled) a:hover {
+	color: white;
+	background-color: #000000;
+	border: 1px solid #000000;
+}
+
+.pagination-lg>li:first-child>a, .pagination-lg>li:last-child>a  {
+	border-radius: 0;
+}
+
+.modal-dialog {
+	margin: 5vh auto;
+	padding: 0;
+	width: 90%;
+}
+
+.modal-content {
+	height: auto;
+	width: 100%;
+	border-radius: 0;
+}
+
+.modal-body {
+	white-space: nowrap; /* this is required unless you put the helper span closely near the img */
+	text-align: center;
+	/*margin: 1em 0;*/
+}
+
+.helper {
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+
+.modal-body img {
+	vertical-align: middle;
+}
+
+button.close.btn-secondary {
+	background-color: #000000;
+	border-color: #000000; 
+	color: #fff;
+	border: 1px solid #000000;
+	opacity: 1;
+	text-shadow: none;
+	padding: 6px 12px;
+	font-weight: normal;
+	font-size: 16px; 
+	border-radius: 0;
+}
+
+/*---------- other popularly used screens -------*/
+/* Portrait */
+@media only screen
+  and (min-device-width: 300px)
+  and (max-device-width: 740px)
+  and (orientation: portrait)  {
+	.modal-dialog {
+		margin: 30vh auto;
+		padding: 0;
+	}
+}
+
+/* Landscape */
+@media only screen
+  and (min-device-width: 300px)
+  and (max-device-width: 740px)
+  and (orientation: landscape)  {
+	.modal-dialog {
+		margin: 5vh auto;
+		padding: 0;
+	}
+}
+
+/* ----------- iPhone 6 for min,6+ for max ----------- */
+
+/* Portrait */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) {
+	.modal-dialog {
+		margin: 30vh auto;
+		padding: 0;
+	}
+}
+
+/* Landscape */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) {
+	.modal-dialog {
+		margin: 5vh auto;
+		padding: 0;
+	}
+}
